@@ -1,9 +1,9 @@
 
 echo "before exe:"
-ls -lrt /home/abdullah4489/Desktop/lab03
+ls -lrt /home/path...
 #fucntion
 exepermission(){
-local folderfile="/home/abdullah4489/Desktop/lab03"
+local folderfile="/home/path..."
 if [[ -d "$folderfile" ]];then
 	for file in "$folderfile"/*; do
 		if [[ -f "$file" ]]; then
@@ -17,7 +17,7 @@ fi
 
 exepermission
 echo "after exe:"
-ls -lrt /home/abdullah4489/Desktop/lab03
+ls -lrt /home/path...
 
 
 

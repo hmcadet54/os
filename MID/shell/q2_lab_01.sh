@@ -7,10 +7,10 @@
 # rather than traditional sorting of integer arrays.
 
 
-path=/home/abdullah4489/Desktop/LabMid/shell/demo/demo1
+path=/home/path...
 touch fileSave.txt
 
-filePath=/home/abdullah4489/Desktop/LabMid/shell/fileSave.txt
+filePath=/home/path...
 for files in "$path"/*
 do
 	if [ -f "$files" ]

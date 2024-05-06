@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "d:/All_Repos_by_hmcadet54/os/MID/Labmid_new",
+      "program": "d:/All_Repos_by_hmcadet54/os/MID/Labmid_new/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
