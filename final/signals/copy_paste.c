@@ -7,7 +7,7 @@
 char text[50] = " ";
 void copy(int sig)
 {
-    strcpy(text, "ABDUULAH");
+    strcpy(text, "sfasdasdasdas");
     printf("text copied: %s\n", text);
 }
 void paste(int sig)
