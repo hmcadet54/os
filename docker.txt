@@ -1,44 +1,44 @@
-# What command updates the package index before installing Docker?
+# 1. What command updates the package index before installing Docker?
 sudo apt update
 
-# How do you manage Docker as a non-root user?
-Add your user to the docker group: sudo usermod -aG docker $USER
+# 2. How do you manage Docker as a non-root user?
+sudo usermod -aG docker $USER
 
-# What is the significance of the -e parameter when running a MySQL container?
-Sets environment variables, like specifying MySQL root password: -e MYSQL_ROOT_PASSWORD=my_secret_password
-
-# How do you access the Nginx container via a web browser?
-Access the container's exposed port through the host's IP address or hostname and the port where Nginx is running, typically port 80.
-
-# What command adds Docker's official GPG key to ensure package authenticity?
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-# How do you verify the Docker installation?
-docker --version
-
-# What SQL commands are demonstrated inside the MySQL container?
-Creation of databases, tables, insertion, updating, and querying of data.
-
-# How do you start and enable the Docker service after installation?
-sudo systemctl start docker && sudo systemctl enable docker
-
-# What command pulls the Nginx Docker image from Docker Hub?
-docker pull nginx
-
-# What is the purpose of the -p flag when running an Nginx container?
-Maps container ports to host ports: -p host_port:container_port
-
-# What command is used to run a MySQL container?
+# 3. What is the significance of the -e parameter when running a MySQL container?
 docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 
-# How do you access the MySQL container using the command-line client?
+# 4. How do you access the Nginx container via a web browser?
+# Access the container's exposed port through the host's IP address or hostname and the port where Nginx is running, typically port 80.
+
+# 5. What command adds Docker's official GPG key to ensure package authenticity?
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# 6. How do you verify the Docker installation?
+docker --version
+
+# 7. What SQL commands are demonstrated inside the MySQL container?
+# Various SQL commands like creating databases, tables, insertion, updating, and querying of data are demonstrated.
+
+# 8. How do you start and enable the Docker service after installation?
+sudo systemctl start docker && sudo systemctl enable docker
+
+# 9. What command pulls the Nginx Docker image from Docker Hub?
+docker pull nginx
+
+# 10. What is the purpose of the -p flag when running an Nginx container?
+# Maps container ports to host ports: -p host_port:container_port
+
+# 11. What command is used to run a MySQL container?
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+
+# 12. How do you access the MySQL container using the command-line client?
 docker exec -it some-mysql mysql -u root -p
 
-# What command creates a new Django project?
+# 13. What command creates a new Django project?
 django-admin startproject project_name
 
-# How do you create a new Django app inside the project directory?
+# 14. How do you create a new Django app inside the project directory?
 python manage.py startapp app_name
 
-# How do you test Docker installation with a simple command?
+# 15. How do you test Docker installation with a simple command?
 docker run hello-world
